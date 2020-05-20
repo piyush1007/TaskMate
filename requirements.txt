@@ -9,9 +9,11 @@ colorama==0.4.3
 cycler==0.10.0
 decorator==4.4.2
 defusedxml==0.6.0
+dj-database-url==0.5.0
 Django==2.2.10
 django-crispy-forms==1.9.1
 django-environ==0.4.5
+django-heroku==0.3.1
 entrypoints==0.3
 fileupload==0.1.5
 future==0.18.2
@@ -45,6 +47,7 @@ pickleshare==0.7.5
 Pillow==7.1.2
 prometheus-client==0.7.1
 prompt-toolkit==3.0.5
+psycopg2==2.8.5
 Pygments==2.6.1
 PyInstaller==3.6
 pyparsing==2.4.7
@@ -71,6 +74,7 @@ typing-extensions==3.7.4.2
 urllib3==1.25.9
 wcwidth==0.1.9
 webencodings==0.5.1
+whitenoise==5.1.0
 widgetsnbextension==3.5.1
 wordcloud==1.7.0
 xlrd==1.2.0
