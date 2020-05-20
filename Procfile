@@ -1,1 +1,1 @@
-web: gunicorn Taskmate.wsgi
+web: python manage.py runserver
