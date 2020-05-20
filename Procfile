@@ -1,1 +1,1 @@
-web:gunicorn Taskmate.wsgi
+web: gunicorn Taskmate.wsgi
