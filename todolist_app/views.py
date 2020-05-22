@@ -75,7 +75,7 @@ def index(request):
 
 def contact(request):
     contect={
-        'contact_text':"Welcome to Contact Us Page",
+        'contact_text':"Contact-Us ",
 
         }
 

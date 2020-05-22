@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
 {% block title %}
@@ -7,7 +8,17 @@
 
 {% block content %}
     <div class="container">
-        <h1>{{ contact_text }}</h1>
+        <h1 style="color:red;"><center>{{ contact_text }}</center></h1>
 
+        <center><img src="{% static 'images/contact.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" class="center" width="500" height="250"></center>
+        <div class="row mt-5">
+            <div class="col-md-10 offset-md-1">
+                <center><p class="h1 text-primary">Email@-yashkr2502@gmail.com</p></center>
+                <center><p class="h2 mt-3">Call@-xxxxxxxxxx</p></center>
+                <center><p class="h2 mt-3">Location-Haldia, West Bangal-721675, India</p></center>
+                <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg mt-3 shadow">Let's Get Started</button></a></center>
+
+        
+        
     </div>
 {% endblock content %}
