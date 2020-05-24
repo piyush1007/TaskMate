@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
 {% block title %}
@@ -7,7 +8,14 @@
 
 {% block content %}
     <div class="container">
-        <h1>{{ about_text }}</h1>
+        <h1 style="color:red;"><center>{{ about_text }}</center></h1>
+        <center><img src="{% static 'images/about.jpg' %}" alt="Notes" class="rounded-lg shadow-sm" class="center" width="500" height="250"></center>
+        <center><p class="h1 text-primary">
+            The TaskMate Web App helps you to origanize your daily and day to day work in a simplified manner. 
+        </p>
+        <center><p class="h1 text-success">
+            You add, edit, and mark the status of your work through this web app.
+            </p>
 
     </div>
 {% endblock content %}

@@ -83,7 +83,7 @@ def contact(request):
 
 def about(request):
     contect={
-        'about_text':"Welcome to About Us",
+        'about_text':"About TaskMate",
 
         }
 
