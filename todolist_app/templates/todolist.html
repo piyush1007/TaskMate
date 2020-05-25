@@ -61,18 +61,18 @@
         </table> 
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-end">
-                <li class="page-item"> <a class="page-link" href="?pg=1"><<</a></li>
-                {% if all_tasks.has_previous %}
-                    <li class="page-item"><a class="page-link" href="?pg={{ all_tasks.previous_page_number }}">{{ all_tasks.previous_page_number }}</a></li>
+                <li class="page-item"> <a class="page-link" href="?pg=1">FP</a></li>
+                {% if all_task.has_previous %}
+                    <li class="page-item"><a class="page-link" href="?pg={{ all_task.previous_page_number }}">{{ all_task.previous_page_number }}</a></li>
                 {% endif %}
 
-                <li class="page-item"><a class="page-link" href="?pg={{ all_tasks.number }}">{{ all_tasks.number }}</a></li>
+                <li class="page-item"><a class="page-link" href="?pg={{ all_task.number }}">{{ all_task.number }}</a></li>
                 
-                {% if all_tasks.has_next %}
-                    <li class="page-item"><a class="page-link" href="?pg={{ all_tasks.next_page_number }}">{{ all_tasks.next_page_number }}</a></li>
+                {% if all_task.has_next %}
+                    <li class="page-item"><a class="page-link" href="?pg={{ all_task.next_page_number }}">{{ all_task.next_page_number }}</a></li>
                 {% endif %}
-                <li class="page-item"><a class="page-link" href="?pg={{ all_tasks.paginator.num_pages }}">>></a></li>
+                <li class="page-item"><a class="page-link" href="?pg={{ all_task.paginator.num_pages }}">LP</a></li>
             </ul>
-        </nav>       
+        </nav>
     </div>
 {% endblock content %}
